@@ -1,0 +1,153 @@
+.sidebar{
+    width: 240px;
+    height: 100%;
+    z-index: 20;
+    position: fixed;
+    overflow: auto;
+    overflow-x: hidden;
+    background-color: rgba(46, 51, 90, 1);
+}
+.sidebar button {
+    visibility: hidden;
+}
+.sidebar ul {
+    list-style:none;
+    display: block;
+    width: 85%;
+    padding: 0 5px 0px 15px;
+}
+.sidebar  li {
+    display:block;
+    width: 100%;
+    height: 56px;  
+}
+.sidebar li a {
+    color: rgba(156, 157, 176, 1);
+    text-decoration: none;
+    align-items: center;
+    font-size: 19px;
+    display: flex;
+}
+.sidebar header .headertop svg {
+    font-size: 19px;
+}
+.sidebar header .headertop{
+    color: white;
+}
+.sidebar nav div ul li {
+    box-shadow: rgba(156, 157, 176, 1) 0px -20px 12px -30px inset;
+    border-radius: 3%;
+}
+.sidebar nav div ul a i{
+    width: 37px;
+    height: 37px;
+    transform: translate(-8%, 10%);
+ }
+ .sidebar ul li span {
+    font-size: 17px;
+    padding-left:10%;
+    padding-top: 8%;
+} 
+.sidebar header ul .logo a{
+    color: white;
+}
+.sidebar header ul .logo span{
+    font-size: 25px;
+}
+.sidebar header ul .logo i{
+    margin-top: 11%;
+}
+.sidebar nav ul li svg{
+    font-size: 24px;
+    padding: 13.2%;
+    transform: translate(4.7%, 4%);
+}
+
+.sidebar h3{
+    font-size:13px;
+    color: rgba(156, 157, 176, 1);
+    padding: 6%;
+    margin-bottom: -11%;
+ }
+ .sidebar header .headertop i svg{
+     font-size: 18px;
+ }
+
+ .sidebar::-webkit-scrollbar-track
+ {
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+     background-color: #F5F5F5;
+ }
+ .sidebar::-webkit-scrollbar
+ {
+     width: 8px;
+     box-sizing: content-box;
+ }
+ .sidebar::-webkit-scrollbar-thumb
+ {
+     background-color: rgb(80, 88, 153);
+        
+     background-image: -webkit-linear-gradient(45deg,
+                                             rgba(46, 51, 90, 1) 25%,
+                                               transparent 25%,
+                                               transparent 50%,
+                                               rgba(46, 51, 90, 1) 50%,
+                                               rgba(46, 51, 90, 1) 75%,
+                                               transparent 75%,
+                                               transparent);
+ }
+ .sidebar ul .show-more ul{
+     display: block;
+ }
+ .sidebar nav div ul .active{
+    box-shadow: rgba(90, 36, 129, 1) 0px -20px 30px -28px inset;
+ }
+ .sidebar nav div ul .active a{
+     color: white;
+ }
+ .sidebar nav div ul .active i{
+    background: linear-gradient(rgb(194 39 251), rgba(34, 215, 255, 1));
+    border-radius: 50%;
+}
+.sidebar nav div ul .active svg{
+    color: white;
+    background-color: rgba(46, 51, 90, 1);
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 900px) {
+    .sidebar{
+        width: 70px;
+    }
+    .sidebar span{
+       display: none;
+    }
+    .sidebar h3{
+      display: none;
+    }
+    .sidebar .logo i{
+        display: none;
+    }
+    .sidebar button{
+        visibility: inherit;
+        border: none;
+        background: transparent;
+        padding-top: 20px;
+    }
+    .sidebar button svg{
+        color: white;
+    }
+    .sidebarmin span{
+        display: block;
+    }
+    .sidebarmin{
+        width: 240px;
+        z-index: 100;
+    }
+    .sidebar header ul .logo button{
+        top: 100px;
+    }
+    .sidebar header ul .logo{
+        top: 100px;
+    }
+}

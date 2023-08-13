@@ -1,0 +1,44 @@
+
+.main{
+  margin-top: 120px;
+  margin-left: 280px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: minmax(10px, auto);
+  }
+  .App {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    background: rgba(33, 33, 61, 1);
+    overflow:initial;
+  }
+  .nav{
+    display: block;
+  }
+  
+@media screen and (max-width:900px){
+  .main{
+    margin-left: 100px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(10px, auto);
+  }
+}
+
+@media screen and (max-width:450px){
+ .main{
+  margin-left: 100px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: minmax(10px, auto);
+ }
+}

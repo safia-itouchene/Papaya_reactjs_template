@@ -1,0 +1,82 @@
+.navbar{
+    height: 60px;
+    background-color: rgba(46, 51, 90, 1);
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .searchbar {
+    align-items: center;
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar .searchbar input {
+    width: 450px;
+    height: 10px;
+    padding: 3%;
+    color: white;
+    box-shadow: rgba(156, 157, 176, 1) 0px -20px 12px -30px inset;
+    border-radius: 25px;
+    border: 1px solid rgb(80, 88, 153);
+    background: linear-gradient(rgba(217, 111, 255, 0.057), rgba(142, 234, 255, 0.177));
+}
+.navbar .searchbar i{
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: linear-gradient(rgb(194 39 251), rgba(34, 215, 255, 1));
+    border-radius: 50%;
+    margin: 5px;
+}
+.navbar .searchbar svg{
+    position: absolute;
+    color: white;
+    border-radius: 50%;
+    padding: 9%;
+    background-color: rgba(46, 51, 90, 1);
+    transform: translate(-1%,2%);
+}
+.navbar .navbar-right {
+    padding-right: 2%;
+}
+.navbar .navbar-right ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: flex-end;
+}
+
+.navbar .navbar-right ul a svg{
+    font-size: 28px;
+    color: rgba(156, 157, 176, 1);
+}
+.navbar .navbar-right ul .videocam a svg{
+    font-size: 30px;
+}
+.navbar .navbar-right ul li a {
+    height: 32px;
+    width: 32px;
+}
+.navbar .navbar-right ul li a img{
+      border-radius: 50%;
+}
+@media screen and (max-width: 1080px){
+    .navbar .searchbar input{
+       width: 300px;
+       height: max-content;
+    }
+}
+@media screen and (max-width: 600px){
+    .navbar .searchbar i,
+    .navbar .searchbar svg,
+    .navbar .searchbar input{
+        display: none;
+    }
+}
